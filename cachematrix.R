@@ -1,9 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This file contains two functions in order to have a matrix and its inverse stored in cache
 
-## Write a short comment describing this function
 
-#I mostly based on the original code and made the minimum change, in order to keep the code working
+## Here we have a funtion defining the object that we will use in order to store at the same time the matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -19,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInv = getInv)
 }
 
-## Write a short comment describing this function
+## This function calculates the inverse if it has not been calculated before.
 
 cacheSolve  <- function(x, ...) {
   m <- x$getInv()
